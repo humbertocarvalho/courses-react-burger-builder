@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'process';
 
 import styles from './BurguerIngredient.module.css';
 
