@@ -7,7 +7,7 @@ export default function Burger(props) {
     <div className={styles.Burger}>
       <BurgerIngredient type='bread-top' />
       <BurgerIngredient type='cheese' />
-      <BurgerIngredient type='meate' />
+      <BurgerIngredient type='meat' />
       <BurgerIngredient type='bread-bottom' />
     </div>
   );
