@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'process';
 
-import styles from './BurguerIngredient.module.css';
+import styles from './BurgerIngredient.module.css';
 
-export default function BurguerIngredient(props) {
+export default function BurgerIngredient(props) {
   let ingredient = null;
 
   switch (props.type) {
