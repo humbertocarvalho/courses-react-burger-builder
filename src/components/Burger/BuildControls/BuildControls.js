@@ -9,11 +9,19 @@ const constrols = [
   { label: 'Meat', type: 'meat' }
 ];
 
-export default function BuildControls() {
+export default function BuildControls(props) {
   return (
     <div className={styles.BuildControls}>
       {constrols.map(ctrl => {
-        return <BuildControl key={ctrl.label} label={ctrl.label} />;
+        return (
+          <BuildControl
+            added={() => {
+              props.ingredientAdded(ctrl.type);
+            }}
+            key={ctrl.label}
+            label={ctrl.label}
+          />
+        );
       })}
     </div>
   );
